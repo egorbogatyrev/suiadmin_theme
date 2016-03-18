@@ -1,0 +1,24 @@
+name: Semantic UI Admin Theme
+type: theme
+description: 'Theme created with the use of the framework Semantic UI.'
+core: 8.x
+base theme: seven
+screenshot: screenshot.png
+
+libraries:
+  - semanticui_admin_theme/semantic-ui
+  - semanticui_admin_theme/global-styling
+  
+stylesheets-remove: 
+  - core/themes/stable/css/system/components/align.module.css
+
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
