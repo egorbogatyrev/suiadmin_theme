@@ -1,0 +1,6 @@
+name: SUIAdmin Dashboard
+description: 'Provides a dashboard page in the administrative interface for organizing administrative tasks and tracking information within your site.'
+type: module
+core: 8.x
+version: 1.0
+package: SUIAdmin
