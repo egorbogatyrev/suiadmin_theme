@@ -1,0 +1,7 @@
+<?php
+/**
+ * Implements hook_install().
+ */
+function suiadmin_theme_install() {
+  \Drupal::service('module_installer')->install(['suiadmin_core']);
+}
