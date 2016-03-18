@@ -1,13 +1,16 @@
-name: Semantic UI Admin Theme
+name: SUIAdmin theme
 type: theme
-description: 'Theme created with the use of the framework Semantic UI.'
+description: 'Administration theme based on SemanticUI(http://semantic-ui.com/) elements. Comes with scope of modules which bring alternative Drupal 8 administrative interface.'
 core: 8.x
 base theme: seven
 screenshot: screenshot.png
+#Dependencies are not meged yet in Drupal 8 core: https://www.drupal.org/node/474684
+dependencies:
+  - suiadmin_core
 
 libraries:
-  - semanticui_admin_theme/semantic-ui
-  - semanticui_admin_theme/global-styling
+  - suiadmin_theme/semantic-ui
+  - suiadmin_theme/global-styling
   
 stylesheets-remove: 
   - core/themes/stable/css/system/components/align.module.css
@@ -15,10 +18,9 @@ stylesheets-remove:
 regions:
   header: 'Header'
   pre_content: 'Pre-content'
-  breadcrumb: Breadcrumb
-  highlighted: Highlighted
-  help: Help
-  content: Content
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
-  sidebar_first: 'First sidebar'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'

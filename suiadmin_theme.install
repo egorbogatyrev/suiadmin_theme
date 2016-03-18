@@ -1,0 +1,9 @@
+<?php
+/**
+ * Implements hook_install().
+ *
+ * Doesn't work because of https://www.drupal.org/node/2652542
+ */
+function suiadmin_theme_install() {echo 123; exit;
+  \Drupal::service('module_installer')->install(['suiadmin_core']);
+}
