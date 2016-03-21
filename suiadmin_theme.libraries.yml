@@ -48,7 +48,7 @@ semantic-ui:
     https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/transition.min.js: { type: external, minified: true }
     https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/search.min.js: { type: external, minified: true }
     https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/shape.min.js: { type: external, minified: true }
-    https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/sidebar.min.js: { type: external, minified: true }	
+    https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/sidebar.min.js: { type: external, minified: true }    
   css:
     theme:
       https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/accordion.min.css: { type: external, minified: true }

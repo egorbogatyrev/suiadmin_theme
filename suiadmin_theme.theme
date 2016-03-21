@@ -23,7 +23,7 @@ function suiadmin_theme_preprocess_field(&$variables) {
   if (isset($variables['element']) && isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'title') {
     $user = \Drupal::currentUser();
     if ($user->hasPermission('bypass node access')) {
-	  $variables['quick_edit'] = TRUE;	
-	}
+      $variables['quick_edit'] = TRUE;    
+    }
   }
 }

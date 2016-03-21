@@ -5,8 +5,8 @@ core: 8.x
 base theme: seven
 screenshot: screenshot.png
 #Dependencies are not meged yet in Drupal 8 core: https://www.drupal.org/node/474684
-dependencies:
-  - suiadmin_core
+#dependencies:
+#  - suiadmin_core
 
 libraries:
   - suiadmin_theme/semantic-ui
