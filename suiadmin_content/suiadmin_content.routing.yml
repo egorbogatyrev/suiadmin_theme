@@ -1,0 +1,6 @@
+suiadmin.content.all:
+  path: '/suiadmin/content'
+  defaults:
+    _controller: 'Drupal\suiadmin_content\Controller\Content::displayAll'
+  requirements:
+    _access: 'TRUE'

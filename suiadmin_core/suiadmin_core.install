@@ -1,0 +1,8 @@
+<?php
+/**
+ * Implements hook_install().
+ */
+function suiadmin_core_install() {
+  //Needs to be called after "toolbar" module hooks
+  module_set_weight('suiadmin_core', 1);
+}
