@@ -2,3 +2,4 @@ name: SemanticUI admin core
 type: module
 description: 'Core functionality'
 core: 8.x
+package: SUIAdmin
