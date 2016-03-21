@@ -17,7 +17,6 @@ stylesheets-remove:
 
 regions:
   header: 'Header'
-  pre_content: 'Pre-content'
   breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted'
   help: 'Help'

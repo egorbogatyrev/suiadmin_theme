@@ -1,0 +1,6 @@
+name: SemanticUI admin Content
+type: module
+description: 'Admin pages to administer content'
+core: 8.x
+dependencies:
+  - suiadmin_core

@@ -1,0 +1,15 @@
+<?php
+/**
+ * Implements hook_page_top().
+ *
+ * Disable "toolbar" core module for suiadmin pages
+ */
+function suiadmin_core_page_top(array &$page_top) {
+  /** @var \Drupal\suiadmin_core\Service\SuiadminCore $suiadmin_core_service */
+  $suiadmin_core_service = \Drupal::service('suiadmin.core');
+  $cutrrentPath = \Drupal::service('path.current')->getPath();
+  $suiadmin_base_path = $suiadmin_core_service->getBaseAdminPath();
+  if ((strpos($cutrrentPath, $suiadmin_base_path) === 0) && isset($page_top['toolbar'])) {
+    unset($page_top['toolbar']);
+  }
+}

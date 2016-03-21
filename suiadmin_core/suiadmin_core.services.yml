@@ -3,3 +3,8 @@ services:
     class: Drupal\suiadmin_core\Theme\SuiadminNegotiator
     tags:
       - { name: theme_negotiator, priority: 0 }
+  suiadmin.core:
+    class: Drupal\suiadmin_core\Service\SuiadminCore
+    arguments:
+      - '@database'
+      - '@cache.default'
