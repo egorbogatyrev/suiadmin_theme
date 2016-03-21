@@ -1,0 +1,6 @@
+suiadmin_dashboard.page:
+  path: '/admin/suiadmin-dashboard'
+  defaults:
+    _controller: '\Drupal\suiadmin_dashboard\Controller\DashboardController::DashboardPage'
+  requirements:
+    _permission: 'view content'
