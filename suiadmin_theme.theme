@@ -3,7 +3,16 @@
 /**
  * @file
  * Functions to support theming in the Semantic UI Admin Theme.
- */ 
+ */
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function suiadmin_theme_preprocess_html(&$variables) {
+
+  // Add adminimal class to the body.
+  $variables['attributes']['class'][] = 'suiadmin';
+
+}
 
 /**
  * Implements hook_preprocess_HOOK() for page templates.
@@ -11,7 +20,7 @@
 function suiadmin_theme_preprocess_page_title(&$variables) {
   if (isset($variables['title_attributes']) && isset($variables['title_attributes']['class'])) {
     $variables['title_attributes']['class'] = array();
-    $variables['title_attributes']['class'][] = 'ui';  
+    $variables['title_attributes']['class'][] = 'ui';
     $variables['title_attributes']['class'][] = 'header';
   }
 }
@@ -23,7 +32,33 @@ function suiadmin_theme_preprocess_field(&$variables) {
   if (isset($variables['element']) && isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'title') {
     $user = \Drupal::currentUser();
     if ($user->hasPermission('bypass node access')) {
-      $variables['quick_edit'] = TRUE;    
+      $variables['quick_edit'] = TRUE;
     }
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for menu-local-action templates.
+ */
+function suiadmin_theme_preprocess_menu_local_action(array &$variables) {
+  $variables['link']['#options']['attributes']['class'][] = 'ui';
+  $variables['link']['#options']['attributes']['class'][] = 'primary';
+  $variables['link']['#title'] = [
+    '#markup' => '<i class="add square icon"></i> ' . t('Add content'),
+  ];
+}
+/**
+ * Implements hook_preprocess_HOOK() for forms.
+ */
+function suiadmin_theme_preprocess_form(array &$variables) {
+  $variables['attributes']['class'][] = 'ui';
+  $variables['attributes']['class'][] = 'form';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for input.
+ */
+function suiadmin_theme_preprocess_input(array &$variables) {
+  $variables['attributes']['class'][] = 'ui';
+}
+

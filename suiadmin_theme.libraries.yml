@@ -13,7 +13,7 @@ global-styling:
   css:
     theme:
       css/custom.css: {}
-      css/colors.css: {}
+#      css/colors.css: {}
       css/print.css: { media: print }
 
 semantic-ui:
